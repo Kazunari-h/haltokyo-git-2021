@@ -35,6 +35,8 @@
                         <li>git checkout</li>
                         <li>git push</li>
                         <li>git pull</li>
+                        <li>git status</li>
+                        <li>git diff</li>
                     </ul>
                 </li>
                 <li></li>
@@ -49,6 +51,71 @@
                 <h2>git init</h2>
                 <p>現在のディレクトリをgitリポジトリにする</p>
             </div>
+
+            <div>
+                <h2>git add [ファイル名 or ディレクトリ名] </h2>
+                <p>コミットを対象を選択して追加する。※addで選択しないとコミットできないので注意！<br>
+                オプションで「.」を指定できる。「.」はレントディレクトリを表していてすべてのファイルが追加される</p>
+            </div>
+
+            <div>
+                <h2>git commit [-m "メッセージ"]</h2>
+                <p>addしたリポジトリをコミットする。オプションで[-m "メッセージ"]指定すると一行だけコメントを残せる</p>
+            </div>
+
+            <div>
+                <h2>git branch</h2>
+                <p>1,git branch<br>
+                「git branch」のみだと自分のbranchの一覧が表示される<br>
+                2,git branch [ブランチ名]<br>
+                新規ブランチを作成できる<br>
+                3,git branch -M [ブランチ名]<br>
+                今いるところのブランチを名前変更できる<br>
+                4,git branch -D [ブランチ名]<br>
+                ブランチを削除できる。※今いるところのブランチは一回チエックアウトしてからじゃないと削除できない。<br>
+                5,git branch -R<br>
+                リモートの一覧見れる</p>
+            </div>
+            
+            <div>
+                <h2>git switch [ブランチ名]</h2>
+                <p>ブランチの切り替えができる</p>
+            </div>
+
+            <div>
+                <h2>git restore [履歴番号]</h2>
+                <p>その地点まで履歴をさかのぼることできる</p>
+            </div>
+
+            <div>
+                <h2>git checkout </h2>
+                <p>1,git checkout [ブランチ名]<br>
+                指定したブランチに切り替える<br>
+                2,git checkout -b renewal<br>
+                新規にブランチを作成してブランチを切り替える。この一文sで作成と切り替えができるので便利！</p>
+            </div>
+
+            <div>
+                <h2>git push</h2>
+                <p>ローカルリポジトリの内容をリモートリポジトリに送信する</p>
+            </div>
+
+            <div>
+                <h2>git pull </h2>
+                <p>オプションで、pullしてくる元を選択することもできる</p>
+            </div>
+
+            <div>
+                <h2>git status</h2>
+                <p>変更点があるのに追加していないファイルを教えてくれる</p>
+            </div>
+
+            <div>
+                <h2>git diff</h2>
+                <p>変更点を比較できる</p>
+            </div>
+
+            
         </section>
         <!-- 2. githubの機能紹介 -->
         <!-- 3. 便利ツールの設定 -->
