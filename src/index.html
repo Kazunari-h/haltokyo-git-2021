@@ -9,15 +9,15 @@
             href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
             rel="stylesheet"
         /> -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css" />
         <script src="//unpkg.com/alpinejs" defer></script>
         <title>Gitの練習</title>
     </head>
     <body>
         <!-- 1. gitのコマンド紹介 -->
         <section class="section_main">
-            <h1>gitでよく使うコマンド</h1>
-            <ul>
+            <h1 class="section_title">gitでよく使うコマンド</h1>
+            <ul class="table_of_contents">
                 <li class="li_01">
                     <p class="main_name">Gitリポジトリの作成系</p>
                     <ul>
@@ -56,7 +56,8 @@
                 <h2>git add</h2>
                 <dl>
                     <dt>git add [ファイル名 or ディレクトリ名]</dt>
-                    <dd>コミットを対象を選択して追加する。※addで選択しないとコミットできないので注意！<br>
+                    <dd>
+                        コミットを対象を選択して追加する。※addで選択しないとコミットできないので注意！<br />
                         オプションで「.」を指定できる。「.」はレントディレクトリを表していてすべてのファイルが追加される
                     </dd>
                 </dl>
@@ -66,7 +67,10 @@
                 <h2>git commit</h2>
                 <dl>
                     <dt>git commit [-m "メッセージ"]</dt>
-                    <dd>addしたリポジトリをコミットする。オプションで[-m "メッセージ"]指定すると一行だけコメントを残せる</dd>
+                    <dd>
+                        addしたリポジトリをコミットする。オプションで[-m
+                        "メッセージ"]指定すると一行だけコメントを残せる
+                    </dd>
                 </dl>
             </div>
 
@@ -74,7 +78,9 @@
                 <h2>git branch</h2>
                 <dl>
                     <dt>git branch</dt>
-                    <dd>「git branch」のみだと自分のbranchの一覧が表示される</dd>
+                    <dd>
+                        「git branch」のみだと自分のbranchの一覧が表示される
+                    </dd>
                 </dl>
                 <dl>
                     <dt>git branch [ブランチ名]</dt>
@@ -85,15 +91,17 @@
                     <dd>今いるところのブランチを名前変更できる</dd>
                 </dl>
                 <dl>
-                    <dt> git branch -D [ブランチ名]</dt>
-                    <dd>ブランチを削除できる。※今いるところのブランチは一回チエックアウトしてからじゃないと削除できない。</dd>
+                    <dt>git branch -D [ブランチ名]</dt>
+                    <dd>
+                        ブランチを削除できる。※今いるところのブランチは一回チエックアウトしてからじゃないと削除できない。
+                    </dd>
                 </dl>
                 <dl>
                     <dt>git branch -R</dt>
                     <dd>リモートの一覧見れる</dd>
                 </dl>
             </div>
-            
+
             <div class="km_ex">
                 <h2>git switch</h2>
                 <dl>
@@ -111,14 +119,16 @@
             </div>
 
             <div class="km_ex">
-                <h2>git checkout </h2>
+                <h2>git checkout</h2>
                 <dl>
                     <dt>git checkout [ブランチ名]</dt>
                     <dd>指定したブランチに切り替える</dd>
                 </dl>
                 <dl>
                     <dt>git checkout -b renewal</dt>
-                    <dd>新規にブランチを作成してブランチを切り替える。この一文で作成と切り替えができるので便利！</dd>
+                    <dd>
+                        新規にブランチを作成してブランチを切り替える。この一文で作成と切り替えができるので便利！
+                    </dd>
                 </dl>
             </div>
 
@@ -141,8 +151,6 @@
                 <h2>git diff</h2>
                 <p>変更点を比較できる</p>
             </div>
-
-            
         </section>
         <!-- 2. githubの機能紹介 -->
         <!-- 3. 便利ツールの設定 -->
