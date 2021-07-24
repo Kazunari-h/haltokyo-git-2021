@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- tailwind -->
-        <link
+        <!-- <link
             href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
             rel="stylesheet"
-        />
+        /> -->
         <script src="//unpkg.com/alpinejs" defer></script>
         <title>Gitの練習</title>
     </head>
@@ -39,7 +39,6 @@
                         <li>git diff</li>
                     </ul>
                 </li>
-                <li></li>
             </ul>
 
             <div>
@@ -53,46 +52,73 @@
             </div>
 
             <div>
-                <h2>git add [ファイル名 or ディレクトリ名] </h2>
-                <p>コミットを対象を選択して追加する。※addで選択しないとコミットできないので注意！<br>
-                オプションで「.」を指定できる。「.」はレントディレクトリを表していてすべてのファイルが追加される</p>
+                <h2>git add</h2>
+                <dl>
+                    <dt>git add [ファイル名 or ディレクトリ名]</dt>
+                    <dd>コミットを対象を選択して追加する。※addで選択しないとコミットできないので注意！<br>
+                        オプションで「.」を指定できる。「.」はレントディレクトリを表していてすべてのファイルが追加される
+                    </dd>
+                </dl>
             </div>
 
             <div>
-                <h2>git commit [-m "メッセージ"]</h2>
-                <p>addしたリポジトリをコミットする。オプションで[-m "メッセージ"]指定すると一行だけコメントを残せる</p>
+                <h2>git commit</h2>
+                <dl>
+                    <dt>git commit [-m "メッセージ"]</dt>
+                    <dd>addしたリポジトリをコミットする。オプションで[-m "メッセージ"]指定すると一行だけコメントを残せる</dd>
+                </dl>
             </div>
 
             <div>
                 <h2>git branch</h2>
-                <p>1,git branch<br>
-                「git branch」のみだと自分のbranchの一覧が表示される<br>
-                2,git branch [ブランチ名]<br>
-                新規ブランチを作成できる<br>
-                3,git branch -M [ブランチ名]<br>
-                今いるところのブランチを名前変更できる<br>
-                4,git branch -D [ブランチ名]<br>
-                ブランチを削除できる。※今いるところのブランチは一回チエックアウトしてからじゃないと削除できない。<br>
-                5,git branch -R<br>
-                リモートの一覧見れる</p>
+                <dl>
+                    <dt>git branch</dt>
+                    <dd>「git branch」のみだと自分のbranchの一覧が表示される</dd>
+                </dl>
+                <dl>
+                    <dt>git branch [ブランチ名]</dt>
+                    <dd>新規ブランチを作成できる</dd>
+                </dl>
+                <dl>
+                    <dt>git branch -M [ブランチ名]</dt>
+                    <dd>今いるところのブランチを名前変更できる</dd>
+                </dl>
+                <dl>
+                    <dt> git branch -D [ブランチ名]</dt>
+                    <dd>ブランチを削除できる。※今いるところのブランチは一回チエックアウトしてからじゃないと削除できない。</dd>
+                </dl>
+                <dl>
+                    <dt>git branch -R</dt>
+                    <dd>リモートの一覧見れる</dd>
+                </dl>
             </div>
             
             <div>
-                <h2>git switch [ブランチ名]</h2>
-                <p>ブランチの切り替えができる</p>
+                <h2>git switch</h2>
+                <dl>
+                    <dt>git switch [ブランチ名]</dt>
+                    <dd>ブランチの切り替えができる</dd>
+                </dl>
             </div>
 
             <div>
-                <h2>git restore [履歴番号]</h2>
-                <p>その地点まで履歴をさかのぼることできる</p>
+                <h2>git restore</h2>
+                <dl>
+                    <dt>git restore [履歴番号]</dt>
+                    <dd>その地点まで履歴をさかのぼることできる</dd>
+                </dl>
             </div>
 
             <div>
                 <h2>git checkout </h2>
-                <p>1,git checkout [ブランチ名]<br>
-                指定したブランチに切り替える<br>
-                2,git checkout -b renewal<br>
-                新規にブランチを作成してブランチを切り替える。この一文sで作成と切り替えができるので便利！</p>
+                <dl>
+                    <dt>git checkout [ブランチ名]</dt>
+                    <dd>指定したブランチに切り替える</dd>
+                </dl>
+                <dl>
+                    <dt>git checkout -b renewal</dt>
+                    <dd>新規にブランチを作成してブランチを切り替える。この一文で作成と切り替えができるので便利！</dd>
+                </dl>
             </div>
 
             <div>
