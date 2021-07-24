@@ -9,23 +9,24 @@
             href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="css/style.css">
         <script src="//unpkg.com/alpinejs" defer></script>
         <title>Gitの練習</title>
     </head>
     <body>
         <!-- 1. gitのコマンド紹介 -->
-        <section>
+        <section class="section_main">
             <h1>gitでよく使うコマンド</h1>
             <ul>
-                <li>
-                    Gitリポジトリの作成系
+                <li class="li_01">
+                    <p class="main_name">Gitリポジトリの作成系</p>
                     <ul>
                         <li>git clone</li>
                         <li>git init</li>
                     </ul>
                 </li>
-                <li>
-                    Gitリポジトリの操作系
+                <li class="li_02">
+                    <p class="main_name">Gitリポジトリの操作系</p>
                     <ul>
                         <li>git add</li>
                         <li>git commit</li>
@@ -42,17 +43,17 @@
                 <li></li>
             </ul>
 
-            <div>
+            <div class="km_ex">
                 <h2>git clone [gitリポジトリのURL]</h2>
                 <p>リポジトリをクローンして、ローカルにコピーしてくる</p>
             </div>
 
-            <div>
+            <div class="km_ex">
                 <h2>git init</h2>
                 <p>現在のディレクトリをgitリポジトリにする</p>
             </div>
 
-            <div>
+            <div class="km_ex">
                 <h2>git add [ファイル名 or ディレクトリ名]</h2>
                 <p>
                     コミットを対象を選択して追加する。※addで選択しないとコミットできないので注意！<br />
@@ -60,7 +61,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="km_ex">
                 <h2>git commit [-m "メッセージ"]</h2>
                 <p>
                     addしたリポジトリをコミットする。オプションで[-m
@@ -68,7 +69,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="km_ex">
                 <h2>git branch</h2>
                 <p>
                     1,git branch<br />
@@ -84,17 +85,17 @@
                 </p>
             </div>
 
-            <div>
+            <div class="km_ex">
                 <h2>git switch [ブランチ名]</h2>
                 <p>ブランチの切り替えができる</p>
             </div>
 
-            <div>
+            <div class="km_ex">
                 <h2>git restore [履歴番号]</h2>
                 <p>その地点まで履歴をさかのぼることできる</p>
             </div>
 
-            <div>
+            <div class="km_ex">
                 <h2>git checkout</h2>
                 <p>
                     1,git checkout [ブランチ名]<br />
@@ -104,22 +105,22 @@
                 </p>
             </div>
 
-            <div>
+            <div class="km_ex">
                 <h2>git push</h2>
                 <p>ローカルリポジトリの内容をリモートリポジトリに送信する</p>
             </div>
 
-            <div>
+            <div class="km_ex">
                 <h2>git pull</h2>
                 <p>オプションで、pullしてくる元を選択することもできる</p>
             </div>
 
-            <div>
+            <div class="km_ex">
                 <h2>git status</h2>
                 <p>変更点があるのに追加していないファイルを教えてくれる</p>
             </div>
 
-            <div>
+            <div class="km_ex">
                 <h2>git diff</h2>
                 <p>変更点を比較できる</p>
             </div>
